@@ -49,11 +49,11 @@ export function Gallery() {
         </div>
       </div>
 
-      {active !== null && (
+      {activePhoto && (
         <div
           role="dialog"
           aria-modal="true"
-          aria-label={photos[active].alt}
+          aria-label={activePhoto.alt}
           onClick={() => setActive(null)}
           className="fixed inset-0 z-60 flex items-center justify-center bg-primary/90 p-6"
         >
