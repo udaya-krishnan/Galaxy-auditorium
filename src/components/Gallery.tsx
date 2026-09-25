@@ -66,8 +66,8 @@ export function Gallery() {
             <X size={28} />
           </button>
           <img
-            src={photos[active].src}
-            alt={photos[active].alt}
+            src={activePhoto.src}
+            alt={activePhoto.alt}
             className="max-h-[80vh] w-auto rounded-2xl"
           />
         </div>
