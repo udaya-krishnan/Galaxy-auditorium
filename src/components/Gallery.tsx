@@ -16,6 +16,7 @@ const photos = [
 export function Gallery() {
   const [active, setActive] = useState<number | null>(null);
   const head = useReveal<HTMLDivElement>();
+  const activePhoto = active === null ? null : photos[active];
 
   return (
     <section id="gallery" className="py-24">
